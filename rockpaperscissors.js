@@ -12,3 +12,10 @@ console.log("Rock")
     console.log("Scissors")
 }
 
+getComputerChoice();
+
+
+// Prompt to get the human choice
+// If human chooses rock, say "you have selected rock"
+// If human chooses paper, say "you have selected paper"
+// If human chooses scissors, say "you have selected scissors"
