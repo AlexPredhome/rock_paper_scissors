@@ -23,11 +23,11 @@ getComputerChoice();
 
 let humanChoice = prompt("Rock, Paper, or Scissors?");
 
-if (humanChoice === "rock"){
+if (humanChoice.toLowerCase() === "rock"){
     console.log("you have selected rock.")
-} else if (humanChoice === "scissors"){
+} else if (humanChoice.toLowerCase() === "scissors"){
     console.log("you have selected scissors.")
-} else if (humanChoice === "paper"){
+} else if (humanChoice.toLowerCase() === "paper"){
     console.log("you have selected paper.")
 } else {
     console.log("hmm...that wasn't one of the options.")
