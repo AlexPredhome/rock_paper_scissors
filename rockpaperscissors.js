@@ -1,6 +1,14 @@
 console.log("Hello World")
 
 function getComputerChoice(){
- return Math.random()// randomly choose rock paper or scissors and print it to the console 
-
+ return Math.floor(Math.random() * 3);
 }
+
+if (getComputerChoice()===0){
+console.log("Rock")
+} else if (getComputerChoice()===1){
+    console.log("Paper")
+} else {
+    console.log("Scissors")
+}
+
