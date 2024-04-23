@@ -19,3 +19,16 @@ getComputerChoice();
 // If human chooses rock, say "you have selected rock"
 // If human chooses paper, say "you have selected paper"
 // If human chooses scissors, say "you have selected scissors"
+
+
+let humanChoice = prompt("Rock, Paper, or Scissors?");
+
+if (humanChoice === "rock"){
+    console.log("you have selected rock.")
+} else if (humanChoice === "scissors"){
+    console.log("you have selected scissors.")
+} else if (humanChoice === "paper"){
+    console.log("you have selected paper.")
+} else {
+    console.log("hmm...that wasn't one of the options.")
+}
