@@ -23,8 +23,11 @@ getComputerChoice();
 // If human chooses paper, say "you have selected paper"
 // If human chooses scissors, say "you have selected scissors"
 
+function getHumanChoice(choice){
+    let humanChoice = prompt("Rock, Paper, or Scissors?");
+    return humanChoice;
+}
 
-let getHumanChoice = prompt("Rock, Paper, or Scissors?");
 
 if (getHumanChoice.toLowerCase() === "rock"){
     console.log("you have selected rock.")
@@ -44,14 +47,23 @@ function playRound(getHumanChoice, getComputerChoice){
 }
 
 //Define human selection and computer selection
-let humanSelection = getHumanChoice();
-let computerSelection= getComputerChoice();
+let humanSelection = getHumanChoice;
+let computerSelection= getComputerChoice;
 //Define how someone wins
 //set a console.log to print who wins
-console.log("You lose! Paper beats rock.")
-console.log("You lose! Scissors beats paper.")
-console.log("You lose! Rock beats scissors.")
-console.log("You win! Paper beats rock.")
-console.log("You win! Scissors beats paper.")
-console.log("You win! Rock beats scissors.")
+if (humanSelection ==="rock" && computerSelection==="paper"){
+    console.log("You lose! Paper beats rock.")
+} else if (humanSelection ==="paper" && computerSelection==="scissors"){
+    console.log("You lose! Scissors beats paper.")
+} else if (humanSelection ==="scissors" && computerSelection==="rock"){
+    console.log("You lose! Rock beats scissors.")
+} else if (humanSelection ==="paper" && computerSelection==="rock"){ 
+    console.log("You win! Paper beats rock.")
+} else if (humanSelection ==="scissors" && computerSelection==="paper"){
+    console.log("You win! Scissors beats paper.")
+} else if (humanSelection ==="rock" && computerSelection==="scissors"){
+    console.log("You win! Rock beats scissors.")
+} else {
+    console.log("hmm... are you sure you entered that right?")
+}
 //track incremental humanScore or computerScore based on round winner
