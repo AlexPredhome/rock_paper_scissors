@@ -23,11 +23,8 @@ getComputerChoice();
 // If human chooses paper, say "you have selected paper"
 // If human chooses scissors, say "you have selected scissors"
 
-function getHumanChoice(choice){
-    let humanChoice = prompt("Rock, Paper, or Scissors?");
-    return humanChoice;
-}
 
+let getHumanChoice = prompt("Rock, Paper, or Scissors?");
 
 if (getHumanChoice.toLowerCase() === "rock"){
     console.log("you have selected rock.")
