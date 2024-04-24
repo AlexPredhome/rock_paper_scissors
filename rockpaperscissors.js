@@ -8,20 +8,16 @@ function getComputerChoice(){
 }
 
 if (getComputerChoice()===0){
-console.log("Rock")
+console.log("Computer selected Rock")
 } else if (getComputerChoice()===1){
-    console.log("Paper")
+    console.log("Computer selected Paper")
 } else {
-    console.log("Scissors")
+    console.log("Computer selected Scissors")
 }
 
 getComputerChoice();
 
 
-// Prompt to get the human choice
-// If human chooses rock, say "you have selected rock"
-// If human chooses paper, say "you have selected paper"
-// If human chooses scissors, say "you have selected scissors"
 
 
 let getHumanChoice = prompt("Rock, Paper, or Scissors?");
