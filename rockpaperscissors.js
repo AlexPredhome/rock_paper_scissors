@@ -24,13 +24,13 @@ getComputerChoice();
 // If human chooses scissors, say "you have selected scissors"
 
 
-let humanChoice = prompt("Rock, Paper, or Scissors?");
+let getHumanChoice = prompt("Rock, Paper, or Scissors?");
 
-if (humanChoice.toLowerCase() === "rock"){
+if (getHumanChoice.toLowerCase() === "rock"){
     console.log("you have selected rock.")
-} else if (humanChoice.toLowerCase() === "scissors"){
+} else if (getHumanChoice.toLowerCase() === "scissors"){
     console.log("you have selected scissors.")
-} else if (humanChoice.toLowerCase() === "paper"){
+} else if (getHumanChoice.toLowerCase() === "paper"){
     console.log("you have selected paper.")
 } else {
     console.log("hmm...that wasn't one of the options.")
@@ -39,7 +39,13 @@ if (humanChoice.toLowerCase() === "rock"){
 
 //Create function called playRound
 //Set function to take in human choice and computer choice
+function playRound(getHumanChoice, getComputerChoice){
+    //write code
+}
+
 //Define human selection and computer selection
+let humanSelection = getHumanChoice();
+let computerSelection= getComputerChoice();
 //Define how someone wins
 //set a console.log to print who wins
 //track incremental humanScore or computerScore based on round winner
