@@ -35,3 +35,11 @@ if (humanChoice.toLowerCase() === "rock"){
 } else {
     console.log("hmm...that wasn't one of the options.")
 }
+
+
+//Create function called playRound
+//Set function to take in human choice and computer choice
+//Define human selection and computer selection
+//Define how someone wins
+//set a console.log to print who wins
+//track incremental humanScore or computerScore based on round winner
