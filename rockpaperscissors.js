@@ -48,4 +48,10 @@ let humanSelection = getHumanChoice();
 let computerSelection= getComputerChoice();
 //Define how someone wins
 //set a console.log to print who wins
+console.log("You lose! Paper beats rock.")
+console.log("You lose! Scissors beats paper.")
+console.log("You lose! Rock beats scissors.")
+console.log("You win! Paper beats rock.")
+console.log("You win! Scissors beats paper.")
+console.log("You win! Rock beats scissors.")
 //track incremental humanScore or computerScore based on round winner
