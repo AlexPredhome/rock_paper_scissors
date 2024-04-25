@@ -8,23 +8,23 @@ function getComputerChoice(){
 }
 
 if (getComputerChoice()===0){
-console.log("Computer selected Rock")
+console.log("Computer selected Rock.")
 } else if (getComputerChoice()===1){
-    console.log("Computer selected Paper")
+    console.log("Computer selected Paper.")
 } else {
-    console.log("Computer selected Scissors")
+    console.log("Computer selected Scissors.")
 }
 
 
 function getHumanChoice(){
 
-let humanChoice = prompt("Rock, Paper, or Scissors?");
+let humanChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
 
-if (humanChoice.toLowerCase() === "rock"){
+if (humanChoice === "rock"){
     console.log("You have selected rock.")
-} else if (humanChoice.toLowerCase() === "scissors"){
+} else if (humanChoice === "scissors"){
     console.log("You have selected scissors.")
-} else if (humanChoice.toLowerCase() === "paper"){
+} else if (humanChoice === "paper"){
     console.log("You have selected paper.")
 } else {
     console.log("Hmm...that wasn't one of the options.")
@@ -38,17 +38,17 @@ if (humanChoice.toLowerCase() === "rock"){
 function playRound(humanSelection, computerSelection){
     //write code
 
-    if (humanSelection ==="rock" && computerSelection==="paper"){
+    if (humanSelection === "You have selected rock." && computerSelection === "Computer selected Paper."){
         console.log("You lose! Paper beats rock.")
-    } else if (humanSelection ==="paper" && computerSelection==="scissors"){
+    } else if (humanSelection === "You have selected paper." && computerSelection=== "Computer selected Scissors."){
         console.log("You lose! Scissors beats paper.")
-    } else if (humanSelection ==="scissors" && computerSelection==="rock"){
+    } else if (humanSelection=== "You have selected scissors." && computerSelection === "Computer selected Rock."){
         console.log("You lose! Rock beats scissors.")
-    } else if (humanSelection ==="paper" && computerSelection==="rock"){ 
+    } else if (humanSelection === "You have selected paper." && computerSelection === "Computer selected Rock."){ 
         console.log("You win! Paper beats rock.")
-    } else if (humanSelection ==="scissors" && computerSelection==="paper"){
+    } else if (humanSelection === "You have selected scissors." && computerSelection=== "Computer selected Paper."){
         console.log("You win! Scissors beats paper.")
-    } else if (humanSelection ==="rock" && computerSelection==="scissors"){
+    } else if (humanSelection === "You have selected rock." && computerSelection === "Computer selected Scissors."){
         console.log("You win! Rock beats scissors.")
     } else {
         console.log("hmm... are you sure you entered that right?")
