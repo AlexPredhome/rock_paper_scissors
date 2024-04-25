@@ -35,28 +35,32 @@ if (humanChoice.toLowerCase() === "rock"){
 
 getHumanChoice();
 
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
 //Create function called playRound
 //Set function to take in human choice and computer choice
-function playRound(humanChoice, computerChoice){
+function playRound(humanSelection, computerSelection){
     //write code
 
-    if (humanChoice ==="rock" && computerChoice==="paper"){
+    if (humanSelection ==="rock" && computerSelection==="paper"){
         console.log("You lose! Paper beats rock.")
-    } else if (humanChoice ==="paper" && ccomputerChoice==="scissors"){
+    } else if (humanSelection ==="paper" && computerSelection==="scissors"){
         console.log("You lose! Scissors beats paper.")
-    } else if (humanChoice ==="scissors" && ccomputerChoice==="rock"){
+    } else if (humanSelection ==="scissors" && computerSelection==="rock"){
         console.log("You lose! Rock beats scissors.")
-    } else if (humanChoice ==="paper" && computerChoice==="rock"){ 
+    } else if (humanSelection ==="paper" && computerSelection==="rock"){ 
         console.log("You win! Paper beats rock.")
-    } else if (humanChoice ==="scissors" && computerChoice==="paper"){
+    } else if (humanSelection ==="scissors" && computerSelection==="paper"){
         console.log("You win! Scissors beats paper.")
-    } else if (humanChoice ==="rock" && ccomputerChoice==="scissors"){
+    } else if (humanSelection ==="rock" && computerSelection==="scissors"){
         console.log("You win! Rock beats scissors.")
     } else {
         console.log("hmm... are you sure you entered that right?")
     }
 
 }
+playRound(getHumanChoice(), getComputerChoice());
 
 //Define human selection and computer selection
 let humanSelection = getHumanChoice;
