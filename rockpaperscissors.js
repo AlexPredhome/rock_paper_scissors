@@ -4,17 +4,20 @@ let humanScore = 0;
 let computerScore = 0;
 
 function getComputerChoice(){
- let computerChoice = Math.floor(Math.random() * 3);
+ let randomNumber = Math.floor(Math.random() * 3);
 
-if (computerChoice===0){
-console.log("Computer selected Rock.")
-} else if (computerChoice===1){
-    console.log("Computer selected Paper.")
-} else {
-    console.log("Computer selected Scissors.")
+ switch(randomNumber) {
+    case 0:
+        return "rock";
+    case 1:
+        return "paper";
+    case 2:
+        return "scissors";
 }
-return computerChoice;
 }
+
+let computerChoice = getComputerChoice();
+console.log("Computer chose", computerChoice);
 
 function getHumanChoice(){
 
@@ -36,20 +39,22 @@ return humanChoice;
 
 //Create function called playRound
 //Set function to take in human choice and computer choice
-function playRound(humanChoice, computerChoice){
+function playRound(human, computer){
     //write code
 
-    if (humanChoice === "rock" && computerChoice === 0){
+    if (human === computer){
+        console.log("Tie!")
+    } else if (human === "rock" && computer === "paper"){
         console.log("You lose! Paper beats rock.")
-    } else if (humanChoice === "paper" && computerChoice=== 1){
+    } else if (human === "paper" && computer=== "scissors"){
         console.log("You lose! Scissors beats paper.")
-    } else if (humanChoice=== "scissors" && computerChoice === 2){
+    } else if (human=== "scissors" && computer === "rock"){
         console.log("You lose! Rock beats scissors.")
-    } else if (humanChoice === "paper" && computerChoice === 2){ 
+    } else if (human === "paper" && computer === "rock"){ 
         console.log("You win! Paper beats rock.")
-    } else if (humanChoice === "scissors" && computerChoice === 1){
+    } else if (human === "scissors" && computer === "paper"){
         console.log("You win! Scissors beats paper.")
-    } else if (humanChoice === "rock" && computerChoice === 0){
+    } else if (human === "rock" && computer === "scissors"){
         console.log("You win! Rock beats scissors.")
     } else {
         console.log("hmm... are you sure you entered that right?")
