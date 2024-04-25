@@ -15,8 +15,6 @@ console.log("Computer selected Rock")
     console.log("Computer selected Scissors")
 }
 
-getComputerChoice();
-
 
 function getHumanChoice(){
 
@@ -33,10 +31,7 @@ if (humanChoice.toLowerCase() === "rock"){
 }
 }
 
-getHumanChoice();
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
 //Create function called playRound
 //Set function to take in human choice and computer choice
@@ -60,7 +55,10 @@ function playRound(humanSelection, computerSelection){
     }
 
 }
-playRound(getHumanChoice(), getComputerChoice());
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
 
 //Define human selection and computer selection
 //Define how someone wins
