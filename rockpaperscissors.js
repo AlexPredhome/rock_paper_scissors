@@ -63,8 +63,6 @@ function playRound(humanSelection, computerSelection){
 playRound(getHumanChoice(), getComputerChoice());
 
 //Define human selection and computer selection
-let humanSelection = getHumanChoice;
-let computerSelection= getComputerChoice;
 //Define how someone wins
 
 //set a console.log to print who wins
