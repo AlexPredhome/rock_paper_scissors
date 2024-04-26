@@ -8,6 +8,8 @@ const playGame = () => {
     for (let i = 0; i < 5; i++) {
     
     rounds+=1;
+//track incremental humanScore or computerScore based on round winner
+
 
 //function for getting computer choice
 function getComputerChoice() {
@@ -86,9 +88,25 @@ if (playerSelection === computerSelection) {
 }  
 
 playGame();
+
+
+function winner(humanScore, computerScore) {
+
+    if (humanScore === computerScore) {
+        result = "THE GAME IS A TIE!";
+    }    
+    else if (humanScore <= computerScore) {
+    result = "COMPUTER WINS THE GAME!"
+    }
+    else if (humanScore >= computerScore) {
+        result = "HUMAN WINS THE GAME!"
+        }
+
+    return result
+}
+console.log(winner(humanScore, computerScore))
 //Define human selection and computer selection
 //Define how someone wins
 
 //set a console.log to print who wins
 
-//track incremental humanScore or computerScore based on round winner
