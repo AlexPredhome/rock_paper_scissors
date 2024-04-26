@@ -2,8 +2,12 @@ console.log("Hello World")
 
 let humanScore = 0;
 let computerScore = 0;
+let rounds = 0;
 
-
+const playGame = () => {
+    for (let i = 0; i < 5; i++) {
+    
+    rounds+=1;
 
 //function for getting computer choice
 function getComputerChoice() {
@@ -42,41 +46,22 @@ if (humanChoice === "rock"){
 return humanChoice;
 }
 
-
-
+let playerSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
 //Create function called playRound
 //Set function to take in human choice and computer choice
-function playRound(human, computer){
-if ((human === "rock" && computer === "rock") ||
-        (human === "paper" && computer ==="paper") ||
-        (human === "scissors" && computer === "scissors")
-    ) {
-        return "Tie!";
-    } else if (
-        (human === "rock" && computer === "scissors") ||
-        (human === "paper" && computer === "rock") ||
-        (human === "scissors" && computer === "paper")
-    ) {
-        return "You win!";
-    } else {
-        return "You lose!";
-    }
-
-}
-
 function playRound(playerSelection, computerSelection){
-
 if (playerSelection === computerSelection) {
     result = console.log('Tie!');}
 
     else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-    result = HumanScore+=1, console.log('You win! Rock beats Scissors!');}
+    result = humanScore+=1, console.log('You win! Rock beats Scissors!');}
     
     else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-    result = HumanScore+=1, console.log('You win! Scissors beats Paper!'); }
+    result = humanScore+=1, console.log('You win! Scissors beats Paper!'); }
 
     else if (playerSelection === 'paper' && computerSelection === 'rock') {
-    result = HumanScore+=1, console.log('You win! Paper beats Rock!');}
+    result = humanScore+=1, console.log('You win! Paper beats Rock!');}
 
     else if (playerSelection === 'scissors' && computerSelection === 'rock') {
     result = computerScore+=1, console.log('You lose! Rock beats Scissors!'); }
@@ -94,9 +79,13 @@ if (playerSelection === computerSelection) {
     console.log(playRound(playerSelection, computerSelection));
 
 
+    console.log(`human score = ${humanScore}`)
+    console.log(`computer score = ${computerScore}`)
+    console.log(`You have played ${rounds} rounds.`)
+}
+}  
 
-let result = playRound();
-console.log(result);
+playGame();
 //Define human selection and computer selection
 //Define how someone wins
 
