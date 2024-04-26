@@ -3,6 +3,9 @@ console.log("Hello World")
 let humanScore = 0;
 let computerScore = 0;
 
+
+
+//function for getting computer choice
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
     let computerChoice;
@@ -21,6 +24,8 @@ function getComputerChoice() {
     return computerChoice;
 }
 
+
+//function for getting human choice
 function getHumanChoice(){
 
 let humanChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
@@ -60,7 +65,6 @@ if ((human === "rock" && computer === "rock") ||
 }
 
 function playRound(playerSelection, computerSelection){
-if (playerSelection=computerSelection)
 
 if (playerSelection === computerSelection) {
     result = console.log('Tie!');}
