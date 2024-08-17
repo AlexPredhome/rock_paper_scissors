@@ -5,7 +5,7 @@ let computerScore = 0;
 let rounds = 0;
 
 const playGame = () => {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i++) {
     
     rounds+=1;
 //track incremental humanScore or computerScore based on round winner
