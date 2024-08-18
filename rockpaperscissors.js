@@ -13,12 +13,17 @@ const playGame = () => {
 
 //function for clicking button
 
-function onButtonClick() {
-    alert('Button clicked!');
-  }
-  
-  const button = document.querySelector('button');
-  button.addEventListener('click', onButtonClick);
+const newButton = document.createElement('button');
+newButton.textContent = 'Rock';
+document.body.appendChild(newButton);
+
+const newButton = document.createElement('button');
+newButton.textContent = 'Paper';
+document.body.appendChild(newButton);
+
+const newButton = document.createElement('button');
+newButton.textContent = 'Scissors';
+document.body.appendChild(newButton);
 
 //function for getting computer choice
 function getComputerChoice() {
