@@ -5,11 +5,20 @@ let computerScore = 0;
 let rounds = 0;
 
 const playGame = () => {
-    for (let i = 0; i++) {
+    for (let i = 0; i<2; i++) {
     
     rounds+=1;
 //track incremental humanScore or computerScore based on round winner
 
+
+//function for clicking button
+
+function onButtonClick() {
+    alert('Button clicked!');
+  }
+  
+  const button = document.querySelector('button');
+  button.addEventListener('click', onButtonClick);
 
 //function for getting computer choice
 function getComputerChoice() {
