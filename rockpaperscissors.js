@@ -22,15 +22,19 @@ rockButton.textContent = 'Rock!';
 document.body.appendChild(rockButton);
 
 rockButton.addEventListener('click', () => {
-  alert('You have selected Rock!');
+  let humanChoice = "rock";
+    alert('You have selected Rock!');
+    console.log("You have selected rock.")
 });
 
 const paperButton = document.createElement('button');
-paperButton.textContent = 'Paper!';
+paperButton.textContent = "Paper!";
 document.body.appendChild(paperButton);
 
 paperButton.addEventListener('click', () => {
-  alert('You have selected paper!');
+  let humanChoice = "paper";
+    alert('You have selected paper!');
+    console.log("You have selected paper.")
 });
 
 const scissorsButton = document.createElement('button');
@@ -38,9 +42,10 @@ scissorsButton.textContent = 'Scissors!';
 document.body.appendChild(scissorsButton);
 
 scissorsButton.addEventListener('click', () => {
-  alert('You have selected Scissors!');
+  let humanChoice = "scissors";
+    alert('You have selected scissors!');
+    console.log("You have selected scissors.")
 });
-
 
 //function for getting computer choice
 function getComputerChoice() {
@@ -63,21 +68,21 @@ function getComputerChoice() {
 
 
 //function for getting human choice
-function getHumanChoice(){
+//function getHumanChoice(){
 
-let humanChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
+//let humanChoice = prompt("Rock, Paper, or Scissors?").toLowerCase();
 
-if (humanChoice === "rock"){
-    console.log("You have selected rock.")
-} else if (humanChoice === "scissors"){
-    console.log("You have selected scissors.")
-} else if (humanChoice === "paper"){
-    console.log("You have selected paper.")
-} else {
-    console.log("Hmm...that wasn't one of the options.")
-}
-return humanChoice;
-}
+//if (humanChoice === "rock"){
+   // console.log("You have selected rock.")
+//} else if (humanChoice === "scissors"){
+   // console.log("You have selected scissors.")
+//} else if (humanChoice === "paper"){
+    //console.log("You have selected paper.")
+//} else {
+    //console.log("Hmm...that wasn't one of the options.")
+//}
+//return humanChoice;
+//}
 
 let playerSelection = getHumanChoice();
 let computerSelection = getComputerChoice();
