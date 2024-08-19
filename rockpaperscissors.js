@@ -13,17 +13,34 @@ const playGame = () => {
 
 //function for clicking button
 
-const newButton = document.createElement('button');
-newButton.textContent = 'Rock';
-document.body.appendChild(newButton);
+//create button 
+//label it rock
+//prompt for a choice
 
-const newButton = document.createElement('button');
-newButton.textContent = 'Paper';
-document.body.appendChild(newButton);
+const rockButton = document.createElement('button');
+rockButton.textContent = 'Rock!';
+document.body.appendChild(rockButton);
 
-const newButton = document.createElement('button');
-newButton.textContent = 'Scissors';
-document.body.appendChild(newButton);
+rockButton.addEventListener('click', () => {
+  alert('You have selected Rock!');
+});
+
+const paperButton = document.createElement('button');
+paperButton.textContent = 'Paper!';
+document.body.appendChild(paperButton);
+
+paperButton.addEventListener('click', () => {
+  alert('You have selected paper!');
+});
+
+const scissorsButton = document.createElement('button');
+scissorsButton.textContent = 'Scissors!';
+document.body.appendChild(scissorsButton);
+
+scissorsButton.addEventListener('click', () => {
+  alert('You have selected Scissors!');
+});
+
 
 //function for getting computer choice
 function getComputerChoice() {
