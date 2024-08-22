@@ -5,6 +5,10 @@ let rounds = 0;
 const playGame = () => {
     for (let i = 0; i<2; i++) {
     
+console.log(`human score = ${humanScore}`)
+console.log(`computer score = ${computerScore}`)
+console.log(`You have played ${rounds} rounds.`)
+
     rounds+=1;
 //track incremental humanScore or computerScore based on round winner
 
@@ -69,7 +73,6 @@ rockButton.addEventListener('click', () => {
     
         return result
 
-
 });
 
 
@@ -99,7 +102,7 @@ paperButton.addEventListener('click', () => {
         else if (humanChoice === 'scissors' && computerChoice === 'rock') {
         result = computerScore+=1, console.log('You lose! Rock beats Scissors!'); }
     
-        else if (phumanChoice === 'paper' && ccomputerChoice === 'scissors') {
+        else if (humanChoice === 'paper' && computerChoice === 'scissors') {
         result =  computerScore+=1, console.log('You lose! Scissors beats Paper!'); }
     
         else if (humanChoice === 'rock' && computerChoice === 'paper') {
@@ -136,7 +139,7 @@ scissorsButton.addEventListener('click', () => {
         else if (humanChoice === 'scissors' && computerChoice === 'rock') {
         result = computerScore+=1, console.log('You lose! Rock beats Scissors!'); }
     
-        else if (phumanChoice === 'paper' && ccomputerChoice === 'scissors') {
+        else if (humanChoice === 'paper' && computerChoice === 'scissors') {
         result =  computerScore+=1, console.log('You lose! Scissors beats Paper!'); }
     
         else if (humanChoice === 'rock' && computerChoice === 'paper') {
