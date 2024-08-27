@@ -27,7 +27,7 @@
 
             roundsPlayed++;
             document.getElementById("result").textContent = resultMessage;
-            document.getElementById("score").textContent = "Round " + roundsPlayed + ".  Score - You: " + playerScore + ", Computer " + computerScore + ".";
+            document.getElementById("score").textContent = "Round " + roundsPlayed + ".  Score - You: " + playerScore + ", Computer: " + computerScore + ".";
 
             // Check if 5 rounds have been played
             if (roundsPlayed === 5) {
